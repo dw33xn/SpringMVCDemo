@@ -22,7 +22,6 @@
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
-          <factory-entry name="NewPersistenceUnit" />
           <factory-entry name="defaultPersistenceUnit" />
           <factory-entry name="noname-a.xml@0" value="9bdf1760-0a5d-46af-907a-dad49f2b482f" />
         </datasource-mapping>

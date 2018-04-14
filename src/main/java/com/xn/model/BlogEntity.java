@@ -1,7 +1,7 @@
 package com.xn.model;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.sql.Date;
 import java.util.Objects;
 
 @Entity
@@ -24,7 +24,7 @@ public class BlogEntity {
     }
 
     @Basic
-    @Column(name = "title", nullable = false, length = 45)
+    @Column(name = "title", nullable = false, length = 100)
     public String getTitle() {
         return title;
     }
@@ -34,7 +34,7 @@ public class BlogEntity {
     }
 
     @Basic
-    @Column(name = "content", nullable = true, length = 45)
+    @Column(name = "content", nullable = true, length = 255)
     public String getContent() {
         return content;
     }

@@ -25,7 +25,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "nickname", nullable = false, length = 255)
+    @Column(name = "nickname", nullable = false, length = 45)
     public String getNickname() {
         return nickname;
     }
@@ -35,7 +35,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "password", nullable = false, length = 255)
+    @Column(name = "password", nullable = false, length = 45)
     public String getPassword() {
         return password;
     }
@@ -45,7 +45,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "first_name", nullable = true, length = 255)
+    @Column(name = "first_name", nullable = true, length = 45)
     public String getFirstName() {
         return firstName;
     }
@@ -55,7 +55,7 @@ public class UserEntity {
     }
 
     @Basic
-    @Column(name = "last_name", nullable = true, length = 255)
+    @Column(name = "last_name", nullable = true, length = 45)
     public String getLastName() {
         return lastName;
     }
